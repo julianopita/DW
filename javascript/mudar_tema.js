@@ -21,7 +21,9 @@ function mudarParaModoDark() {
     document.documentElement.style.setProperty('--cor-neutra-cinza-escuro', '#F5F5F5');
     document.getElementById('wave').src = "./images/wave_dark.svg";
     
+    if (document.getElementById("sobrenos-container") != undefined) {
     document.getElementById("sobrenos-container").style.backgroundImage = "url('../images/wave_invertida_dark.svg')";
+    }
 }
 
 function mudarParaModoLight() {
@@ -34,7 +36,11 @@ function mudarParaModoLight() {
     document.documentElement.style.setProperty('--cor-midia-social-footer', '#e8eef2');
     document.documentElement.style.setProperty('--cor-quadrado-onda-fundo', '#e9a209');
     document.documentElement.style.setProperty('--cor-neutra-cinza-escuro', '#1d1d1d');
-    document.getElementById('wave').src = "images/wave.svg";
+    document.getElementById('wave').src = "./images/wave.svg";
+
+    if (document.getElementById("sobrenos-container") != undefined) {
+    document.getElementById("sobrenos-container").style.backgroundImage = "url('../images/wave_invertida_light.svg')";
+    }
 }
 
 
