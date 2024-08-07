@@ -1,11 +1,27 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    let temaArmazenado = localStorage.getItem('tema');
+    
+    if (temaArmazenado) {
+        if (temaArmazenado === 'dark') {
+            mudarParaModoDark();            
+        } else {
+            mudarParaModoLight();            
+        }
+    } else {
+        mudarParaModoLight();
+    }
+});
+
 function mudarTema(){
     let computedStyle = window.getComputedStyle(document.body);
     let backgroundColor = computedStyle.backgroundColor;
 
     if (backgroundColor === 'rgb(255, 249, 234)') {
         mudarParaModoDark();
+        localStorage.setItem('tema', 'dark');
     } else {
         mudarParaModoLight();
+        localStorage.setItem('tema', 'light');
     }
 }
 
