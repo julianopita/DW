@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+@import url('sobrenos.css');
+@import url('orcamento.css');
+
+:root {
+  --cor-footer-fundo: #ffe8b4;
+  --cor-principal-fundo: #fff9ea;
+  --cor-botao-fundo: #e9a209;
+  --cor-titulo: #e9a209;
+  --cor-quadrado-onda-fundo: #e9a209;
+  --cor-palavra-destaque: #E59500;
+  --cor-hover-botao: #ffd988;
+  --cor-estrelas: #e9a209;
+  --cor-itens-header: #000000;
+
+  --cor-neutra-preta: #000000;
+  --cor-neutra-cinza-escuro: #1d1d1d;
+  --cor-neutra-branca: #fff;
+  --cor-neutra-cards: #434343;
+  --cor-neutra-subtitulo: #333333;
+
+  --cor-midia-social-body: #192019;
+  --cor-midia-social-body-fundo: #ffffff;
+  --cor-midia-social-footer: #123C69;
+  --cor-midia-social-footer-fundo: #e8eef2;
+
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  /*color: white;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-principal-fundo);
+  color: var(--cor-neutra-preta);
+}
+
+section {
+  padding: 28px 8%;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-botao-fundo);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: backgroud-color .3s ease;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn-default:hover {
+  background-color: var(--cor-hover-botao);
+  cursor: pointer;
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-media-buttons a {
+  color: var(--cor-midia-social);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-midia-social-fundo);
+  width: 45px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  color: var(--cor-titulo);
+  font-size: 1.563rem;
+}
+
+.section-title {
+  font-size: 2.1875rem;
+}
+
+.mudar-tema{
+  border: none ;
+  background-color: transparent; 
+}
+
+.mudar-tema:hover{
+  cursor: pointer; 
+}
+
+.material-symbols-outlined{
+  font-size: 28px !important;
+  color: var(--cor-itens-header);
+}

@@ -8,17 +8,17 @@
   align-items: center;
 } */
 
-h1 {
-  color: #333;
+#cakeForm h1 {
+  color: var(--cor-neutra-subtitulo);
 }
 
-h2 {
-  color: #333;
+#cakeForm h2 {
+  color: var(--cor-neutra-preta);
   display: flex;
   flex-direction: column;
 }
 
-form {
+#cakeForm {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -74,8 +74,8 @@ input {
   border-radius: 4px;
 }
 
-button {
-  background-color: #ff0000;
+#cakeForm button {
+  background-color: var(--cor-botao-fundo);
   color: white;
   padding: 10px;
   border: none;
@@ -85,6 +85,6 @@ button {
   width: 100%;
 }
 
-button:hover {
-  background-color: #4cae4c;
-}
+/* button:hover {
+  background-color: var(--cor-hover-botao);
+} */
