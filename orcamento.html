@@ -5,10 +5,12 @@
     <title>Orçamento - Paula Au Chocolat</title>
     <meta
       name="description"
-      content="Bem vindos à confeitaria Paula Au Chocolat, onde você sonha e nós adoçamos seu dia." />
+      content="Bem vindos à confeitaria Paula Au Chocolat, onde você sonha e nós adoçamos seu dia."
+    />
     <meta
       name="keywords"
-      content="confeitaria, bolos, doces, chocolate, bolo de aniversário" />
+      content="confeitaria, bolos, doces, chocolate, bolo de aniversário"
+    />
     <meta name="viewport" content="width=device-width" />
     <!-- <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"> -->
 
@@ -18,15 +20,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
@@ -53,9 +59,7 @@
             <a href="orcamento.html" class="nav-link">Orçamentos</a>
           </li>
           <button class="mudar-tema" onclick="mudarTema()">
-            <span class="material-symbols-outlined">
-              contrast
-            </span>
+            <span class="material-symbols-outlined"> contrast </span>
           </button>
           <button class="btn-default">Faça seu pedido</button>
         </ul>
@@ -69,8 +73,9 @@
       <div id="mobile_menu">
         <ul id="mobile_nav_list">
           <!--lista de navegacao do menu-->
-          <li class="nav_item"><a href="index.html"
-              class="nav-link">Home</a></li>
+          <li class="nav_item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
           <li class="nav_item">
             <a href="contato.html" class="nav-link">Contato</a>
           </li>
@@ -94,85 +99,56 @@
         <h2 class="section-title">Monte o seu bolo</h2>
         <h3 class="section-subtitle">
           Selecione a massa, dois recheios e a cobertura. Você pode também
-          incluir
-          uma frase!
+          incluir uma frase!
         </h3>
         <br />
         <form id="cakeForm">
           <h2>Sabor da massa:</h2>
           <div class="options" id="massaOptions">
-            <div class="option dish" data-value="chocolate">
-              <img
-                img
-                src="images/chocolate.jpg"
-                alt="Chocolate"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="chocolate">
+              <img src="images/chocolate.jpg" alt="Chocolate" />
               <h3 class="dish-title">Chocolate</h3>
 
               <span class="dish-description">
                 Um classico com feito com chocolate 70% cacau.
               </span>
             </div>
-            <div class="option dish" data-value="baunilha">
-              <img
-                img
-                src="images/baunilha.jpg"
-                alt="Baunilha"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="baunilha">
+              <img src="images/baunilha.jpg" alt="Baunilha" />
               <h3 class="dish-title">Baunilha</h3>
 
               <span class="dish-description">
                 Massa de sabor delicado para evidenciar o recheio.
               </span>
             </div>
-            <div class="option dish" data-value="red_velvet">
-              <img
-                img
-                src="images/red_velvet.jpg"
-                alt="Red Velvet"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="red_velvet">
+              <img src="images/red_velvet.jpg" alt="Red Velvet" />
               <h3 class="dish-title">Red Velvet</h3>
 
-              <span class="dish-description"> Sabor e aparência marcantes.
+              <span class="dish-description">
+                Sabor e aparência marcantes.
               </span>
             </div>
           </div>
           <br />
           <h2>Primeiro Recheio:</h2>
           <div class="options" id="recheio1Options">
-            <div class="option dish" data-value="brigadeiro">
-              <img
-                img
-                src="images/brigadeiro.jpg"
-                alt="Brigadeiro"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="brigadeiro">
+              <img src="images/brigadeiro.jpg" alt="Brigadeiro" />
               <h3 class="dish-title">Brigadeiro</h3>
 
-              <span class="dish-description"> O preferido dos brasieiros.
+              <span class="dish-description">
+                O preferido dos brasieiros.
               </span>
             </div>
-            <div class="option dish" data-value="doce_de_leite">
-              <img
-                img
-                src="images/doce_de_leite.jpg"
-                alt="Doce de Leite"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="doce_de_leite">
+              <img src="images/doce_de_leite.jpg" alt="Doce de Leite" />
               <h3 class="dish-title">Doce de Leite</h3>
 
               <span class="dish-description"> Cremoso e aveludado.</span>
             </div>
-            <div class="option dish" data-value="creme">
-              <img
-                img
-                src="images/creme.jpg"
-                alt="Creme"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="creme">
+              <img src="images/creme.jpg" alt="Creme" />
               <h3 class="dish-title">Creme</h3>
 
               <span class="dish-description"> Clássico e elegante. </span>
@@ -181,36 +157,22 @@
           <br />
           <h2>Segundo Recheio:</h2>
           <div class="options" id="recheio2Options">
-            <div class="option dish" data-value="brigadeiro">
-              <img
-                img
-                src="images/brigadeiro.jpg"
-                alt="Brigadeiro"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="brigadeiro">
+              <img src="images/brigadeiro.jpg" alt="Brigadeiro" />
               <h3 class="dish-title">Brigadeiro</h3>
 
-              <span class="dish-description"> O preferido dos brasieiros.
+              <span class="dish-description">
+                O preferido dos brasieiros.
               </span>
             </div>
-            <div class="option dish" data-value="doce_de_leite">
-              <img
-                img
-                src="images/doce_de_leite.jpg"
-                alt="Doce de Leite"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="doce_de_leite">
+              <img src="images/doce_de_leite.jpg" alt="Doce de Leite" />
               <h3 class="dish-title">Doce de Leite</h3>
 
               <span class="dish-description"> Cremoso e aveludado.</span>
             </div>
-            <div class="option dish" data-value="creme">
-              <img
-                img
-                src="images/creme.jpg"
-                alt="Creme"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="creme">
+              <img src="images/creme.jpg" alt="Creme" />
               <h3 class="dish-title">Creme</h3>
 
               <span class="dish-description"> Clássico e elegante. </span>
@@ -219,37 +181,22 @@
           <br />
           <h2>Cobertura:</h2>
           <div class="options" id="coberturaOptions">
-            <div class="option dish" data-value="ganache">
-              <img
-                img
-                src="images/ganache.jpg"
-                alt="Ganache"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="ganache">
+              <img src="images/ganache.jpg" alt="Ganache" />
               <h3 class="dish-title">Ganache</h3>
 
               <span class="dish-description">
                 Feito com chocolate 70% de cacau.
               </span>
             </div>
-            <div class="option dish" data-value="chantilly">
-              <img
-                img
-                src="images/chantilly.jpg"
-                alt="Chantilly"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="chantilly">
+              <img src="images/chantilly.jpg" alt="Chantilly" />
               <h3 class="dish-title">Chantilly</h3>
 
               <span class="dish-description"> Leve e aerado.</span>
             </div>
-            <div class="option dish" data-value="fondant">
-              <img
-                img
-                src="images/fondant.jpg"
-                alt="Fondant"
-                width="300"
-                class="dish-image" />
+            <div class="option" data-value="fondant">
+              <img src="images/fondant.jpg" alt="Fondant" />
               <h3 class="dish-title">Fondant</h3>
 
               <span class="dish-description"> Crocante e saboroso. </span>
@@ -269,7 +216,11 @@
       </section>
     </main>
     <footer>
-      <img id="wave" src="/images/wave.svg" alt="Wave de tom amarelo que faz o footer" />
+      <img
+        id="wave"
+        src="/images/wave.svg"
+        alt="Wave de tom amarelo que faz o footer"
+      />
 
       <div id="footer_items">
         <span id="copyright"> &copy 2024 CJRT </span>
