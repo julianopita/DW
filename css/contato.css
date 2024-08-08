@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+#main-container{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container{
+    display: flex;
+    width: 550px;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: var(--cor-neutra-branca);
+    box-shadow: 16px 16px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#nomes{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+
+.nome{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#input-formulario{
+    height: 25px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 2px;
+    background-color: transparent;
+    margin-bottom: 12px;
+}
+
+#botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-enviar, #btn-limpar{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    font-size: 25px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+
+#btn-enviar{
+    background-color: var(--cor-botao-fundo);
+    color: var(--cor-neutra-preta);
+}
+
+#btn-limpar{
+    background-color: rgb(243, 119, 57);
+    color: var(--cor-neutra-preta);
+}
+
+@media (max-width: 1007px){
+    #botoes{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #nomes{
+        flex-direction: column;
+    }
+    #form-container{
+        width: 450px;
+    }
+}
+
+/*
+@media screen and (max-width: 450px) {
+    #nomes{
+        flex-direction: column;
+    }
+    #botoes{
+        flex-direction: column;
+    }
+    #nomes{
+        flex-direction: column;
+    }
+    .nome{
+        flex-direction: column;
+    }
+    #formulario{
+        flex-direction: row;
+    } 
+}*/
+
+/* @media screen and (max-width: 1170px) {
+    
+} */
+
+/* @media (max-width: 1170px){
+    #section1{
+      flex-direction: column;
+    }
+    #chefe-paula{
+      display: none;
+    }
+    #titulo, #sub-titulo{
+      text-align: center;
+    }
+    #section3{
+      flex-direction: column;
+    }
+    #localizacao{
+      width: 100%;
+    }
+    .mapa{
+      width: 100%;
+    }
+  } */
+
