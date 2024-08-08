@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Paula Au Chocolat</title>
+    <meta
+      name="description"
+      content="Bem vindos à confeitaria Paula Au Chocolat, onde você sonha e nós adoçamos seu dia."
+    />
+    <meta
+      name="keywords"
+      content="confeitaria, bolos, doces, chocolate, bolo de aniversário"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <script src="../javascript/script.js"></script>
+    <script src="../javascript/mudar_tema.js"></script>
+    <header class="cabecalho">
+      <nav id="navbar" role="navigation">
+        <i class="fa-solid fa-cake-candles" id="nav-logo"> Paula Au Chocolat</i>
+        <ul id="nav_list">
+          <!--lista de navegacao do menu-->
+          <li class="nav_item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav_item active">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav_item">
+            <a href="produtos.html" class="nav-link">Produtos</a>
+          </li>
+          <li class="nav_item">
+            <a href="sobrenos.html" class="nav-link">Sobre nós</a>
+          </li>
+          <li class="nav_item">
+            <a href="orcamento.html" class="nav-link">Orçamentos</a>
+          </li>
+          <button class="mudar-tema" onclick="mudarTema()">
+            <span class="material-symbols-outlined"> contrast </span>
+          </button>
+        </ul>
+
+        <!--menu de hamburger do mobile-->
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <!--lista de navegacao do menu-->
+          <li class="nav_item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav_item active">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav_item">
+            <a href="produtos.html" class="nav-link">Produtos</a>
+          </li>
+          <li class="nav_item">
+            <a href="sobrenos.html" class="nav-link">Sobre nós</a>
+          </li>
+          <li class="nav_item">
+            <a href="orcamento.html" class="nav-link">Orçamentos</a>
+          </li>
+          <button class="mudar-tema" onclick="mudarTema()">
+            <span class="material-symbols-outlined"> contrast </span>
+          </button>
+        </ul>
+      </div>
+    </header>
+
+    <main id="main-container">
+      <div id="form-container">
+        <form id="formulario" onsubmit="validaForm(event, this)">
+          <!-- <img id="imagem-formulario" src="../images/fundo_universo.webp" alt=""> -->
+          <h2 id="titulo">Formulário para Contato</h2>
+          <div id="nomes">
+            <div class="nome">
+              Primeiro Nome
+              <input
+                class="input-formulario"
+                type="text"
+                name="firstName"
+                required
+              />
+            </div>
+            <div class="nome">
+              Último Nome
+              <input class="input-formulario" type="text" name="lastName" />
+            </div>
+          </div>
+          E-mail
+          <input class="input-formulario" type="text" name="email" required />
+          <div id="botoes">
+            <button id="btn-enviar" type="submit">Enviar</button>
+            <button id="btn-limpar" type="reset">Limpar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <img
+        id="wave"
+        src="../images/wave.svg"
+        alt="Wave de tom amarelo que faz o footer"
+      />
+
+      <div id="footer_items">
+        <span id="copyright"> &copy 2024 CJRT </span>
+
+        <div class="social-media-buttons">
+          <a href>
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href>
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

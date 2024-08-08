@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Paula Au Chocolat</title>
+    <meta
+      name="description"
+      content="Bem vindos à confeitaria Paula Au Chocolat, onde você sonha e nós adoçamos seu dia."
+    />
+    <meta
+      name="keywords"
+      content="confeitaria, bolos, doces, chocolate, bolo de aniversário"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+
+  <body>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/mudar_tema.js"></script>
+    <header class="cabecalho">
+      <nav id="navbar" role="navigation">
+        <i class="fa-solid fa-cake-candles" id="nav-logo"> Paula Au Chocolat</i>
+        <ul id="nav_list">
+          <!--lista de navegacao do menu-->
+          <li class="nav_item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/produtos.html" class="nav-link">Produtos</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/sobrenos.html" class="nav-link">Sobre nós</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/orcamento.html" class="nav-link">Orçamentos</a>
+          </li>
+          <button class="mudar-tema" onclick="mudarTema()">
+            <span class="material-symbols-outlined"> contrast </span>
+          </button>
+        </ul>
+
+        <!--menu de hamburger do mobile-->
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <!--lista de navegacao do menu-->
+          <li class="nav_item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/contato.html" class="nav-link">Contato</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/produtos.html" class="nav-link">Produtos</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/sobrenos.html" class="nav-link">Sobre nós</a>
+          </li>
+          <li class="nav_item">
+            <a href="paginas/orcamento.html" class="nav-link">Orçamentos</a>
+          </li>
+          <button class="mudar-tema" onclick="mudarTema()">
+            <span class="material-symbols-outlined"> contrast </span>
+          </button>
+        </ul>
+      </div>
+    </header>
+
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">
+            Absolutamente inesquecível, deliciosamente <span>doce</span>.
+          </h1>
+
+          <p class="description">
+            A Paula Au Chocolat é uma confeitaria especializada em bolos e
+            doces, trazendo sabor aos seus momentos mais felizes.
+          </p>
+
+          <div id="cta_buttons">
+            <a href="menu.html" class="btn-default">
+              Conheça nossos produtos
+            </a>
+
+            <a href="tel: +1199999999" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (11) 9 9999-9999
+            </a>
+          </div>
+
+          <div class="social-media-buttons">
+            <a href="https://www.whatsapp.com/" target="_blank">
+              <i class="fa-brands fa-whatsapp" id="icon-whatsapp"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/chocolate.paula/?hl=en"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram" id="icon-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook" id="icon-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="banner">
+          <img
+            src="images/cake.png"
+            alt="Imagem com um bolo redondo sabor pistache e doces sofisticados ao redor."
+          />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Especiais do Mês</h2>
+        <h3 class="section-subtitle">
+          Conheça nossas delícias especiais do mês de agosto
+        </h3>
+
+        <div id="dishes">
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="images/cestacafe.jpg"
+              width="300"
+              class="dish-image"
+              alt="Cesta de vinhos, pães e geléia"
+            />
+            <h3 class="dish-title">Cesta de Dia dos Pais</h3>
+
+            <span class="dish-description">
+              Nossa cesta inclui dois vinhos chilenos, baguetes, geléia
+              artesanal e frutas frescas orgânicas.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(168+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$ 258,90</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="images/cheesecakemorango.jpg"
+              width="300"
+              class="dish-image"
+              alt="Cheesecake com morangos e geléia de morango"
+            />
+            <h3 class="dish-title">Cheesecake de Morango inteira</h3>
+
+            <span class="dish-description">
+              Perfeita para uma sobremesa gelada. Feita com morangos frescos e
+              cheesecake Philadelphia.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$ 164,90</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="images/tortamacadamia.jpg"
+              width="300"
+              class="dish-image"
+              alt="Torta de macadâmia caramelizada"
+            />
+            <h3 class="dish-title">Torta de Macadâmia inteira</h3>
+
+            <span class="dish-description">
+              O favorito dos clientes! Massa macia e amanteigada com macadâmias
+              caramelizadas e crocantes.
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(253+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$ 235,90</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <img
+              src="images/caixachocolate.jpg"
+              width="300"
+              class="dish-image"
+              alt="Caixa de Chocolate"
+            />
+            <h3 class="dish-title">Caixa de Chocolate Sabores</h3>
+
+            <span class="dish-description">
+              Trufas de chocolate belga. O presente perfeito para quem ama
+              chocolate!
+            </span>
+
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(125+)</span>
+            </div>
+
+            <div class="dish-price">
+              <h4>R$ 103,90</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="images/paulachef2.png" id="testimonial_chef" alt="" />
+
+        <div id="testimonials_content">
+          <h2 class="section-title">Depoimentos</h2>
+          <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img src="images/woman2.jpg" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Louise Bertha
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellat voluptatibus cumque dolor ea est quae alias
+                  necessitatibus"
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="images/woman.jpg" class="feedback-avatar" alt="" />
+
+              <div class="feedback-content">
+                <p>
+                  Raquel Ferreira
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellat voluptatibus cumque dolor ea est quae alias
+                  necessitatibus"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-default">Ver mais avaliações</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        id="wave"
+        src="images/wave.svg"
+        alt="Wave de tom amarelo que faz o footer"
+      />
+
+      <div id="footer_items">
+        <span id="copyright"> &copy 2024 CJRT </span>
+
+        <div class="social-media-buttons">
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
