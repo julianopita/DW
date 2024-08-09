@@ -1,10 +1,8 @@
-
 /*calcular o tamanho do conteudo baseado no nav*/
 #home {
   display: flex;
   min-height: calc(100vh - 61px);
   position: relative;
-  
 }
 
 #cta {
@@ -27,7 +25,7 @@
 
 #cta .description {
   font-size: 1rem;
-  color:var(--cor-neutra-cinza-escuro);
+  color: var(--cor-neutra-cinza-escuro);
 }
 
 #cta_buttons {
@@ -40,7 +38,7 @@
   color: #282d24;
 }
 
-#phone_button{
+#phone_button {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -50,7 +48,7 @@
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
   border-radius: 11px;
   text-decoration: none;
-  transition: box-shadow .3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 #phone_button i {
@@ -61,7 +59,9 @@
   box-shadow: none;
 }
 
-#icon-facebook, #icon-instagram, #icon-whatsapp {
+#icon-facebook,
+#icon-instagram,
+#icon-whatsapp {
   color: var(--cor-midia-social-body);
   background-color: var(--cor-midia-social-body-fundo);
   padding: 8px 14px;
@@ -69,9 +69,8 @@
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
   border-radius: 11px;
   text-decoration: none;
-  transition: box-shadow .3s ease;
+  transition: box-shadow 0.3s ease;
 }
-
 
 .social-media-buttons a:hover {
   box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.2);
@@ -92,7 +91,7 @@
 
 /*imagem/formato que fica atrás da imagem de bolo*/
 .shape {
-  background-color:  var(--cor-quadrado-onda-fundo);
+  background-color: var(--cor-quadrado-onda-fundo);
   width: 50%;
   height: 100%;
   position: absolute;
@@ -102,14 +101,26 @@
   z-index: 1;
 }
 
+#contentind {
+  margin: 0 0;
+  padding: 28px 8%;
+  width: 100%;
+  background-image: url("images/wave_invertida_light.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1170px) {
   #home {
     min-height: 100%;
     padding-top: 0px;
-    
   }
 
-  #banner, 
+  #banner,
   #banner img,
   #home .shape {
     display: none;
@@ -119,7 +130,7 @@
     width: 100%;
     align-items: center;
     text-align: center;
-  } 
+  }
 }
 
 @media screen and (max-width: 450px) {
