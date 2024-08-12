@@ -92,7 +92,7 @@
 /*imagem/formato que fica atrás da imagem de bolo*/
 .shape {
   background-color: var(--cor-quadrado-onda-fundo);
-  width: 50%;
+  width: 60%;
   height: 100%;
   position: absolute;
   border-radius: 40% 30% 0% 20%;
