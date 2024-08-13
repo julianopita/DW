@@ -18,7 +18,7 @@
 #form-container {
   display: flex;
   width: 550px;
-  height: 70vh;
+  height: 75vh;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
@@ -93,47 +93,3 @@
     width: 450px;
   }
 }
-
-/*
-@media screen and (max-width: 450px) {
-    #nomes{
-        flex-direction: column;
-    }
-    #botoes{
-        flex-direction: column;
-    }
-    #nomes{
-        flex-direction: column;
-    }
-    .nome{
-        flex-direction: column;
-    }
-    #formulario{
-        flex-direction: row;
-    } 
-}*/
-
-/* @media screen and (max-width: 1170px) {
-    
-} */
-
-/* @media (max-width: 1170px){
-    #section1{
-      flex-direction: column;
-    }
-    #chefe-paula{
-      display: none;
-    }
-    #titulo, #sub-titulo{
-      text-align: center;
-    }
-    #section3{
-      flex-direction: column;
-    }
-    #localizacao{
-      width: 100%;
-    }
-    .mapa{
-      width: 100%;
-    }
-  } */
